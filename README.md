@@ -1,29 +1,6 @@
-# vue-3
+#### webpack配置
+练习vue-cli3下的配置方案，给出一个较为完整的配置解决方案
 
-## Project setup
-```
-npm install
-```
+#### 通过饿了么app的模拟加深对vue的理解
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### 搭建较为完备的less框架
