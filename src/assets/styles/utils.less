@@ -1,0 +1,170 @@
+@import '~@/assets/styles/variable.less';
+
+// base-utils
+
+// 宽高
+.wh(@width;  @height: @width) {
+  width: @width;
+  height: @height
+}
+// display
+.db() {
+    display: block;
+
+}
+.dib() {
+    display: inline-block;
+}
+.dfx() {
+    display: flex;
+}
+// 字体大小颜色
+.fz(@s) {
+    font-size: @s;
+}
+.f-sc(@size; @col) {
+	font-size: @size;
+	color: @col;
+}
+.col(@c:@blue) {
+    color: @c;
+}
+// 相同的行高和高度
+.lh-h(@h) {
+	line-height: @h;
+	height: @h
+}
+.l-h(@h){
+    line-height: @h;
+}
+// 定位
+.abs() {
+    position: absolute;
+}
+.rel() {
+    position: relative;
+}
+.fix() {
+    position: fixed;
+}
+// border
+.bor-b(@b: 1px solid @bor-col) {
+    border-bottom: @b;
+}
+.bor-r(@b: 1px solid @bor-col) {
+    border-right: @b;
+}
+.bor-l(@b: 1px solid @bor-col) {
+    border-left: @b;
+}
+.bor-t(@b: 1px solid @bor-col) {
+    border-top: @b;
+}
+.bor(@b: 1px solid @bor-col) {
+    border: @b;
+}
+.bor-tb(@b: 1px solid @bor-col) {
+    border-top: @b;
+    border-bottom: @b;
+}
+.bor-rad(@b: @bor-rad){
+    border-radius: @b;
+}
+// 阴影
+.box-sha(@b: @box-sha){
+
+}
+// padding值
+.p-t(@p: @gap){
+	padding-top: @p;
+}
+.p-b(@p: @gap){
+	padding-bottom: @p;
+}
+.p-l(@p: @gap){
+	padding-left: @p;
+}
+.p-r(@p: @gap){
+	padding-right: @p;
+}
+// margin值
+.m-t(@p: @gap){
+	margin-top: @p;
+}
+.m-b(@p: @gap){
+	margin-bottom: @p;
+}
+.m-l(@p: @gap){
+	margin-left: @p;
+}
+.m-r(@p: @gap){
+	margin-right: @p;
+}
+// 浮动
+.fr() {
+    float: right;
+}
+.fl() {
+    float: left;
+}
+.clearfix(){
+    &:after{
+        .db();
+        .wh(0,0);
+        content: '';
+        clear: both;
+    }
+}
+// 背景色
+.bg-c(@c: #fff) {
+    background-color: @c;
+}
+
+
+
+
+//显示行数
+.clamp(@val) {
+  overflow: hidden;
+  -webkit-line-clamp: @val;
+  -moz-line-clamp: @val;
+  -ms-line-clamp: @val;
+  -o-line-clamp: @val;
+  line-clamp: @val;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -o-box-orient: vertical;
+  box-orient: vertical;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -o-box;
+  display: box;
+  word-break: break-all
+}
+//文本折行 Wrap
+.wrap() {
+    text-wrap: wrap;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    word-wrap: break-word;
+}
+//文本隐藏 Hide
+.text-hide() {
+    display:block;
+    font-size:0;
+    text-indent:-99999em;
+    color:transparent;
+}
+//文本超出显示省略号 Ellipsis
+.text-autocut() {
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-text-overflow: ellipsis;
+    -khtml-text-overflow: ellipsis; 
+    -icab-text-overflow: ellipsis; 
+    -moz-text-overflow: ellipsis; 
+    -o-text-overflow: ellipsis; 
+    text-overflow: ellipsis; 
+}
